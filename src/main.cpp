@@ -1,3 +1,4 @@
+#include "physics/GravityGenerator.h"
 #include "physics/Particle.h"
 #include <GLFW/glfw3.h>
 #include <iostream>
@@ -21,8 +22,9 @@ int main() {
   Particle particle;
   particle.position = Vector3(0.0f, 0.5f, 0.0f);
   particle.velocity = Vector3(0.1f, 0.0f, 0.0f);
-  particle.acceleration = Vector3(0.0f, -9.8f, 0.0f);
   particle.setMass(1.0f);
+
+  GravityGenerator gravity(Vector3(0.0f, -9.8f, 0.0f));
 
   double lastTime = glfwGetTime();
 
@@ -30,6 +32,9 @@ int main() {
     double currentTime = glfwGetTime();
     float deltaTime = static_cast<float>(currentTime - lastTime);
     lastTime = currentTime;
+
+    particle.clearAccumulator();
+    gravity.updateForce(&particle, deltaTime);
 
     particle.integrate(deltaTime);
 

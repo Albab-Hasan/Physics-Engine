@@ -335,6 +335,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\albab\Documents\Projects\physics\src\main.cpp" />
     <ClCompile Include="C:\Users\albab\Documents\Projects\physics\src\physics\Vector3.cpp" />
     <ClCompile Include="C:\Users\albab\Documents\Projects\physics\src\physics\Particle.cpp" />
+    <ClCompile Include="C:\Users\albab\Documents\Projects\physics\src\physics\GravityGenerator.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

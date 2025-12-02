@@ -15,4 +15,17 @@ You'll need CMake and a C++ compiler to build this. I'm using GLFW for window ma
 
 ## Current Status
 
-Right now, I've just got a basic window opening up. It's not much, but it's the foundation I need to start drawing things.
+I've implemented the core physics system with particle dynamics. The engine can simulate particles with position, velocity, and acceleration. There's a basic gravity simulation that shows a particle falling and bouncing off the ground.
+
+### What's Working
+- Vector3 math class for 3D calculations
+- Particle class with Euler integration
+- Gravity simulation
+- Simple collision detection with ground plane
+- Basic OpenGL rendering
+
+### Next Steps
+- Implement a force accumulator system
+- Add multiple particles
+- Create 3D sphere rendering
+- Build a proper camera system
