@@ -1,0 +1,14 @@
+# Target labels
+ glfw-populate
+# Source files and their labels
+C:/Users/albab/Documents/Projects/physics/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate
+C:/Users/albab/Documents/Projects/physics/build/_deps/glfw-subbuild/CMakeFiles/3bd7f77d78749ed42490887a3ac9c7ab/glfw-populate.rule
+C:/Users/albab/Documents/Projects/physics/build/_deps/glfw-subbuild/CMakeFiles/b68a327cf734b18637d40f3c0e303a3a/glfw-populate-complete.rule
+C:/Users/albab/Documents/Projects/physics/build/_deps/glfw-subbuild/CMakeFiles/253c2cc170d357c515c790d279ed993f/glfw-populate-build.rule
+C:/Users/albab/Documents/Projects/physics/build/_deps/glfw-subbuild/CMakeFiles/253c2cc170d357c515c790d279ed993f/glfw-populate-configure.rule
+C:/Users/albab/Documents/Projects/physics/build/_deps/glfw-subbuild/CMakeFiles/253c2cc170d357c515c790d279ed993f/glfw-populate-download.rule
+C:/Users/albab/Documents/Projects/physics/build/_deps/glfw-subbuild/CMakeFiles/253c2cc170d357c515c790d279ed993f/glfw-populate-install.rule
+C:/Users/albab/Documents/Projects/physics/build/_deps/glfw-subbuild/CMakeFiles/253c2cc170d357c515c790d279ed993f/glfw-populate-mkdir.rule
+C:/Users/albab/Documents/Projects/physics/build/_deps/glfw-subbuild/CMakeFiles/253c2cc170d357c515c790d279ed993f/glfw-populate-patch.rule
+C:/Users/albab/Documents/Projects/physics/build/_deps/glfw-subbuild/CMakeFiles/253c2cc170d357c515c790d279ed993f/glfw-populate-test.rule
+C:/Users/albab/Documents/Projects/physics/build/_deps/glfw-subbuild/CMakeFiles/253c2cc170d357c515c790d279ed993f/glfw-populate-update.rule

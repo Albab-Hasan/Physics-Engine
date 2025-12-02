@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\albab\Documents\Projects\physics\build\_deps\glfw-subbuild\CMakeFiles\253c2cc170d357c515c790d279ed993f\glfw-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\albab\Documents\Projects\physics\build\_deps\glfw-subbuild\CMakeFiles\253c2cc170d357c515c790d279ed993f\glfw-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\albab\Documents\Projects\physics\build\_deps\glfw-subbuild\CMakeFiles\253c2cc170d357c515c790d279ed993f\glfw-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\albab\Documents\Projects\physics\build\_deps\glfw-subbuild\CMakeFiles\253c2cc170d357c515c790d279ed993f\glfw-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\albab\Documents\Projects\physics\build\_deps\glfw-subbuild\CMakeFiles\253c2cc170d357c515c790d279ed993f\glfw-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\albab\Documents\Projects\physics\build\_deps\glfw-subbuild\CMakeFiles\253c2cc170d357c515c790d279ed993f\glfw-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\albab\Documents\Projects\physics\build\_deps\glfw-subbuild\CMakeFiles\253c2cc170d357c515c790d279ed993f\glfw-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\albab\Documents\Projects\physics\build\_deps\glfw-subbuild\CMakeFiles\253c2cc170d357c515c790d279ed993f\glfw-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\albab\Documents\Projects\physics\build\_deps\glfw-subbuild\CMakeFiles\b68a327cf734b18637d40f3c0e303a3a\glfw-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\albab\Documents\Projects\physics\build\_deps\glfw-subbuild\CMakeFiles\3bd7f77d78749ed42490887a3ac9c7ab\glfw-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\albab\Documents\Projects\physics\build\_deps\glfw-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\albab\Documents\Projects\physics\build\_deps\glfw-subbuild\CMakeFiles\glfw-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{38E83784-3F77-3B85-B610-1F95E08DF55D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
