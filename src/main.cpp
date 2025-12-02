@@ -1,7 +1,10 @@
 #include "physics/GravityGenerator.h"
 #include "physics/Particle.h"
 #include <GLFW/glfw3.h>
+#include <cstdlib>
+#include <ctime>
 #include <iostream>
+#include <vector>
 
 
 int main() {
@@ -19,10 +22,20 @@ int main() {
 
   glfwMakeContextCurrent(window);
 
-  Particle particle;
-  particle.position = Vector3(0.0f, 0.5f, 0.0f);
-  particle.velocity = Vector3(0.1f, 0.0f, 0.0f);
-  particle.setMass(1.0f);
+  std::srand(static_cast<unsigned int>(std::time(nullptr)));
+
+  std::vector<Particle> particles;
+  const int particleCount = 20;
+
+  for (int i = 0; i < particleCount; ++i) {
+    Particle p;
+    p.position = Vector3((std::rand() % 200 - 100) / 100.0f,
+                         (std::rand() % 100 + 50) / 100.0f, 0.0f);
+    p.velocity = Vector3((std::rand() % 100 - 50) / 100.0f,
+                         (std::rand() % 100 - 50) / 100.0f, 0.0f);
+    p.setMass(1.0f);
+    particles.push_back(p);
+  }
 
   GravityGenerator gravity(Vector3(0.0f, -9.8f, 0.0f));
 
@@ -33,22 +46,25 @@ int main() {
     float deltaTime = static_cast<float>(currentTime - lastTime);
     lastTime = currentTime;
 
-    particle.clearAccumulator();
-    gravity.updateForce(&particle, deltaTime);
+    for (auto &particle : particles) {
+      particle.clearAccumulator();
+      gravity.updateForce(&particle, deltaTime);
+      particle.integrate(deltaTime);
 
-    particle.integrate(deltaTime);
-
-    if (particle.position.y < -1.0f) {
-      particle.position.y = -1.0f;
-      particle.velocity.y *= -0.8f;
+      if (particle.position.y < -1.0f) {
+        particle.position.y = -1.0f;
+        particle.velocity.y *= -0.8f;
+      }
     }
 
     glClear(GL_COLOR_BUFFER_BIT);
 
-    glPointSize(10.0f);
+    glPointSize(8.0f);
     glBegin(GL_POINTS);
-    glColor3f(1.0f, 1.0f, 1.0f);
-    glVertex3f(particle.position.x, particle.position.y, particle.position.z);
+    for (const auto &particle : particles) {
+      glColor3f(1.0f, 1.0f, 1.0f);
+      glVertex3f(particle.position.x, particle.position.y, particle.position.z);
+    }
     glEnd();
 
     glfwSwapBuffers(window);
