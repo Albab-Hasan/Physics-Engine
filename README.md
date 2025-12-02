@@ -15,17 +15,23 @@ You'll need CMake and a C++ compiler to build this. I'm using GLFW for window ma
 
 ## Current Status
 
-I've implemented the core physics system with particle dynamics. The engine can simulate particles with position, velocity, and acceleration. There's a basic gravity simulation that shows a particle falling and bouncing off the ground.
+I've built a working particle physics system that can simulate multiple particles simultaneously. The engine uses a force accumulator pattern, which makes it easy to add different types of forces.
 
 ### What's Working
 - Vector3 math class for 3D calculations
 - Particle class with Euler integration
-- Gravity simulation
+- Force accumulator system
+- Force generator interface
+- Gravity force generator
+- Multiple particles with random initial conditions
 - Simple collision detection with ground plane
 - Basic OpenGL rendering
 
+### Recent Progress
+Just added support for simulating 20 particles at once. Each particle has random starting position and velocity, making the simulation more interesting to watch.
+
 ### Next Steps
-- Implement a force accumulator system
-- Add multiple particles
-- Create 3D sphere rendering
+- Add particle-to-particle collisions
+- Implement spring forces
+- Create 3D sphere rendering instead of points
 - Build a proper camera system
