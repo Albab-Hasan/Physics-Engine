@@ -14,6 +14,10 @@ FetchContent_MakeAvailable(glfw)
 
 find_package(OpenGL REQUIRED)
 
-add_executable(PhysicsEngine src/main.cpp)
+add_executable(PhysicsEngine 
+    src/main.cpp
+    src/physics/Vector3.cpp
+    src/physics/Particle.cpp
+)
 
 target_link_libraries(PhysicsEngine PRIVATE glfw OpenGL::GL)

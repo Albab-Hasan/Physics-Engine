@@ -4,6 +4,12 @@
     <ClCompile Include="C:\Users\albab\Documents\Projects\physics\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\albab\Documents\Projects\physics\src\physics\Vector3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\albab\Documents\Projects\physics\src\physics\Particle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\albab\Documents\Projects\physics\CMakeLists.txt" />
