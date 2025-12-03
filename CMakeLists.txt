@@ -19,6 +19,7 @@ add_executable(PhysicsEngine
     src/physics/Vector3.cpp
     src/physics/Particle.cpp
     src/physics/GravityGenerator.cpp
+    src/physics/ParticleSpring.cpp
 )
 
 target_link_libraries(PhysicsEngine PRIVATE glfw OpenGL::GL)

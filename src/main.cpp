@@ -1,8 +1,7 @@
 #include "physics/GravityGenerator.h"
 #include "physics/Particle.h"
+#include "physics/ParticleSpring.h"
 #include <GLFW/glfw3.h>
-#include <cstdlib>
-#include <ctime>
 #include <iostream>
 #include <vector>
 
@@ -22,22 +21,19 @@ int main() {
 
   glfwMakeContextCurrent(window);
 
-  std::srand(static_cast<unsigned int>(std::time(nullptr)));
+  // Create particles
+  Particle p1; // Fixed anchor
+  p1.position = Vector3(0.0f, 0.8f, 0.0f);
+  p1.setMass(0.0f); // Infinite mass
 
-  std::vector<Particle> particles;
-  const int particleCount = 20;
+  Particle p2; // Moving particle
+  p2.position = Vector3(0.0f, 0.0f, 0.0f);
+  p2.setMass(1.0f);
 
-  for (int i = 0; i < particleCount; ++i) {
-    Particle p;
-    p.position = Vector3((std::rand() % 200 - 100) / 100.0f,
-                         (std::rand() % 100 + 50) / 100.0f, 0.0f);
-    p.velocity = Vector3((std::rand() % 100 - 50) / 100.0f,
-                         (std::rand() % 100 - 50) / 100.0f, 0.0f);
-    p.setMass(1.0f);
-    particles.push_back(p);
-  }
-
+  // Create force generators
   GravityGenerator gravity(Vector3(0.0f, -9.8f, 0.0f));
+  ParticleSpring spring(&p1, 10.0f,
+                        0.5f); // Spring constant 10, rest length 0.5
 
   double lastTime = glfwGetTime();
 
@@ -46,25 +42,36 @@ int main() {
     float deltaTime = static_cast<float>(currentTime - lastTime);
     lastTime = currentTime;
 
-    for (auto &particle : particles) {
-      particle.clearAccumulator();
-      gravity.updateForce(&particle, deltaTime);
-      particle.integrate(deltaTime);
+    // Update forces
+    p2.clearAccumulator();
+    gravity.updateForce(&p2, deltaTime);
+    spring.updateForce(&p2, deltaTime);
 
-      if (particle.position.y < -1.0f) {
-        particle.position.y = -1.0f;
-        particle.velocity.y *= -0.8f;
-      }
-    }
+    // Integrate
+    p2.integrate(deltaTime);
 
+    // Render
     glClear(GL_COLOR_BUFFER_BIT);
 
-    glPointSize(8.0f);
+    // Draw spring line
+    glBegin(GL_LINES);
+    glColor3f(0.5f, 0.5f, 0.5f);
+    glVertex3f(p1.position.x, p1.position.y, p1.position.z);
+    glVertex3f(p2.position.x, p2.position.y, p2.position.z);
+    glEnd();
+
+    // Draw particles
+    glPointSize(10.0f);
     glBegin(GL_POINTS);
-    for (const auto &particle : particles) {
-      glColor3f(1.0f, 1.0f, 1.0f);
-      glVertex3f(particle.position.x, particle.position.y, particle.position.z);
-    }
+
+    // Anchor (Red)
+    glColor3f(1.0f, 0.0f, 0.0f);
+    glVertex3f(p1.position.x, p1.position.y, p1.position.z);
+
+    // Bob (White)
+    glColor3f(1.0f, 1.0f, 1.0f);
+    glVertex3f(p2.position.x, p2.position.y, p2.position.z);
+
     glEnd();
 
     glfwSwapBuffers(window);

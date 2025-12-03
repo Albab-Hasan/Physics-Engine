@@ -13,6 +13,9 @@
     <ClCompile Include="C:\Users\albab\Documents\Projects\physics\src\physics\GravityGenerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\albab\Documents\Projects\physics\src\physics\ParticleSpring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\albab\Documents\Projects\physics\CMakeLists.txt" />
