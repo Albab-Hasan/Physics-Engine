@@ -15,7 +15,7 @@ You'll need CMake and a C++ compiler to build this. I'm using GLFW for window ma
 
 ## Current Status
 
-I've built a working particle physics system that can simulate multiple particles simultaneously. The engine uses a force accumulator pattern, which makes it easy to add different types of forces.
+I've built a working particle physics system that can simulate multiple particles and different types of forces. The engine uses a force accumulator pattern, which makes it easy to add new force generators like gravity and springs.
 
 ### What's Working
 - Vector3 math class for 3D calculations
@@ -23,15 +23,15 @@ I've built a working particle physics system that can simulate multiple particle
 - Force accumulator system
 - Force generator interface
 - Gravity force generator
-- Multiple particles with random initial conditions
+- Spring force generator
+- Multiple particles
 - Simple collision detection with ground plane
 - Basic OpenGL rendering
 
 ### Recent Progress
-Just added support for simulating 20 particles at once. Each particle has random starting position and velocity, making the simulation more interesting to watch.
+Implemented a spring force generator based on Hooke's Law. The current demo shows a particle suspended from a fixed point by a spring, bouncing up and down under the influence of gravity and elasticity.
 
 ### Next Steps
 - Add particle-to-particle collisions
-- Implement spring forces
 - Create 3D sphere rendering instead of points
 - Build a proper camera system
