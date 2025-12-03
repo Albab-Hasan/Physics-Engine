@@ -20,6 +20,8 @@ add_executable(PhysicsEngine
     src/physics/Particle.cpp
     src/physics/GravityGenerator.cpp
     src/physics/ParticleSpring.cpp
+    src/physics/ParticleContact.cpp
+    src/physics/ParticleContactResolver.cpp
 )
 
 target_link_libraries(PhysicsEngine PRIVATE glfw OpenGL::GL)

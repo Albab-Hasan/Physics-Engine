@@ -15,6 +15,7 @@ public:
   Vector3 operator-(const Vector3 &v) const;
   void operator*=(float scalar);
   Vector3 operator*(float scalar) const;
+  float operator*(const Vector3 &v) const;
 
   float magnitude() const;
   float squareMagnitude() const;

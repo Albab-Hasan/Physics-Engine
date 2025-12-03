@@ -3,3 +3,5 @@ C:\Users\albab\Documents\Projects\physics\src\physics\Vector3.cpp;C:\Users\albab
 C:\Users\albab\Documents\Projects\physics\src\physics\Particle.cpp;C:\Users\albab\Documents\Projects\physics\build\PhysicsEngine.dir\Debug\Particle.obj
 C:\Users\albab\Documents\Projects\physics\src\physics\GravityGenerator.cpp;C:\Users\albab\Documents\Projects\physics\build\PhysicsEngine.dir\Debug\GravityGenerator.obj
 C:\Users\albab\Documents\Projects\physics\src\physics\ParticleSpring.cpp;C:\Users\albab\Documents\Projects\physics\build\PhysicsEngine.dir\Debug\ParticleSpring.obj
+C:\Users\albab\Documents\Projects\physics\src\physics\ParticleContact.cpp;C:\Users\albab\Documents\Projects\physics\build\PhysicsEngine.dir\Debug\ParticleContact.obj
+C:\Users\albab\Documents\Projects\physics\src\physics\ParticleContactResolver.cpp;C:\Users\albab\Documents\Projects\physics\build\PhysicsEngine.dir\Debug\ParticleContactResolver.obj

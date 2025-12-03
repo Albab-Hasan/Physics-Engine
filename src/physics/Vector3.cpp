@@ -35,6 +35,10 @@ Vector3 Vector3::operator*(float scalar) const {
   return Vector3(x * scalar, y * scalar, z * scalar);
 }
 
+float Vector3::operator*(const Vector3 &v) const {
+  return x * v.x + y * v.y + z * v.z;
+}
+
 float Vector3::magnitude() const { return std::sqrt(x * x + y * y + z * z); }
 
 float Vector3::squareMagnitude() const { return x * x + y * y + z * z; }
