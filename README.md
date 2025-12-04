@@ -15,7 +15,7 @@ You'll need CMake and a C++ compiler to build this. I'm using GLFW for window ma
 
 ## Current Status
 
-I've built a working particle physics system with 3D visualization. The engine supports multiple particles, various forces (gravity, springs), collision resolution, and renders particles as 3D spheres with lighting.
+I've built a working particle physics system with 3D visualization and navigation. The engine supports multiple particles, various forces, collision resolution, and allows the user to fly around the scene.
 
 ### What's Working
 - Vector3 math class for 3D calculations
@@ -27,11 +27,12 @@ I've built a working particle physics system with 3D visualization. The engine s
 - Multiple particles with random initial conditions
 - Collision detection (particle-particle and particle-ground)
 - 3D Sphere rendering with lighting
+- First-person fly camera (WASD + Mouse)
 
 ### Recent Progress
-Replaced the basic point rendering with 3D spheres. Implemented a procedural sphere mesh generator and enabled OpenGL lighting to give the particles volume and depth.
+Implemented a camera system. You can now use WASD keys to move and the mouse to look around the 3D scene, making it much easier to inspect the simulation from different angles.
 
 ### Next Steps
-- Build a proper camera system
 - Implement more complex force generators (e.g., drag, buoyancy)
 - Add user interaction (mouse picking)
+- Optimize collision detection (spatial partitioning)
