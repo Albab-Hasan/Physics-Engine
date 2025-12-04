@@ -15,7 +15,7 @@ You'll need CMake and a C++ compiler to build this. I'm using GLFW for window ma
 
 ## Current Status
 
-I've built a working particle physics system that can simulate multiple particles, different types of forces, and collisions. The engine uses a force accumulator pattern and a contact resolution system.
+I've built a working particle physics system with 3D visualization. The engine supports multiple particles, various forces (gravity, springs), collision resolution, and renders particles as 3D spheres with lighting.
 
 ### What's Working
 - Vector3 math class for 3D calculations
@@ -26,12 +26,12 @@ I've built a working particle physics system that can simulate multiple particle
 - Particle contact resolution system
 - Multiple particles with random initial conditions
 - Collision detection (particle-particle and particle-ground)
-- Basic OpenGL rendering
+- 3D Sphere rendering with lighting
 
 ### Recent Progress
-Implemented a collision resolution system. Particles now bounce off each other and the ground with a defined coefficient of restitution. The demo shows 10 particles bouncing around in a confined space.
+Replaced the basic point rendering with 3D spheres. Implemented a procedural sphere mesh generator and enabled OpenGL lighting to give the particles volume and depth.
 
 ### Next Steps
-- Create 3D sphere rendering instead of points
 - Build a proper camera system
 - Implement more complex force generators (e.g., drag, buoyancy)
+- Add user interaction (mouse picking)
