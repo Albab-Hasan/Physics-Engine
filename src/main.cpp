@@ -162,8 +162,8 @@ int main() {
         for (const auto& particle : particles) {
             glPushMatrix();
             glTranslatef(particle.position.x, particle.position.y, particle.position.z);
-            glColor3f(1.0f, 0.5f, 0.0f); // Orange particles
-            drawSphere(particleRadius, 20, 20);
+            glColor3f(0.7f, 0.7f, 0.7f); // Gray particles
+            drawSphere(particleRadius, 40, 40);
             glPopMatrix();
         }
 
