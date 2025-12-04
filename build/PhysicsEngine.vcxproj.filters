@@ -22,6 +22,9 @@
     <ClCompile Include="C:\Users\albab\Documents\Projects\physics\src\physics\ParticleContactResolver.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\albab\Documents\Projects\physics\src\physics\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\albab\Documents\Projects\physics\CMakeLists.txt" />

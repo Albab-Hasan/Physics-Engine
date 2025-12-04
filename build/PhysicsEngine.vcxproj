@@ -339,6 +339,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\albab\Documents\Projects\physics\src\physics\ParticleSpring.cpp" />
     <ClCompile Include="C:\Users\albab\Documents\Projects\physics\src\physics\ParticleContact.cpp" />
     <ClCompile Include="C:\Users\albab\Documents\Projects\physics\src\physics\ParticleContactResolver.cpp" />
+    <ClCompile Include="C:\Users\albab\Documents\Projects\physics\src\physics\Camera.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
