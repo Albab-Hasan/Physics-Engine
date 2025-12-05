@@ -3,6 +3,7 @@
 #include "physics/Particle.h"
 #include "physics/ParticleContact.h"
 #include "physics/ParticleContactResolver.h"
+#include "physics/ParticleDrag.h"
 #include "physics/ParticleSpring.h"
 #include <GLFW/glfw3.h>
 #include <cmath>
@@ -10,7 +11,6 @@
 #include <ctime>
 #include <iostream>
 #include <vector>
-
 
 #ifndef M_PI
 #define M_PI 3.14159265358979323846
@@ -131,6 +131,7 @@ int main() {
   }
 
   GravityGenerator gravity(Vector3(0.0f, -9.8f, 0.0f));
+  ParticleDrag drag(0.1f, 0.01f);
   ParticleContactResolver resolver(particleCount * 2);
 
   // Collision data
@@ -150,6 +151,7 @@ int main() {
     for (auto &particle : particles) {
       particle.clearAccumulator();
       gravity.updateForce(&particle, deltaTime);
+      drag.updateForce(&particle, deltaTime);
     }
 
     // 2. Integrate
