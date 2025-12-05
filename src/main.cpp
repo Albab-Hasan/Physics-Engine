@@ -21,6 +21,22 @@ Camera camera(Vector3(0.0f, 2.0f, 10.0f));
 float lastX = 400, lastY = 300;
 bool firstMouse = true;
 
+void framebuffer_size_callback(GLFWwindow *window, int width, int height) {
+  if (height == 0)
+    height = 1;
+  glViewport(0, 0, width, height);
+  glMatrixMode(GL_PROJECTION);
+  glLoadIdentity();
+  float aspect = (float)width / (float)height;
+  float fovy = 45.0f;
+  float zNear = 0.1f;
+  float zFar = 100.0f;
+  float ymax = zNear * tan(fovy * M_PI / 360.0f);
+  float xmax = ymax * aspect;
+  glFrustum(-xmax, xmax, -ymax, ymax, zNear, zFar);
+  glMatrixMode(GL_MODELVIEW);
+}
+
 void mouse_callback(GLFWwindow *window, double xpos, double ypos) {
   if (firstMouse) {
     lastX = xpos;
@@ -95,8 +111,13 @@ int main() {
   }
 
   glfwMakeContextCurrent(window);
+  glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
   glfwSetCursorPosCallback(window, mouse_callback);
   glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+
+  int width, height;
+  glfwGetFramebufferSize(window, &width, &height);
+  framebuffer_size_callback(window, width, height);
 
   // Setup Lighting
   glEnable(GL_LIGHTING);
