@@ -28,6 +28,7 @@ I've built a working particle physics system with 3D visualization and navigatio
 - Collision detection (particle-particle and particle-ground)
 - 3D Sphere rendering with lighting
 - First-person fly camera (WASD + Mouse)
+- Full screen mode
 
 ### Recent Progress
 Implemented a drag force generator to simulate air resistance. This adds realism by slowing down particles over time, preventing them from accelerating indefinitely.
