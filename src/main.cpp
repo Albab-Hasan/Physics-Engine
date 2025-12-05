@@ -103,7 +103,11 @@ int main() {
     return -1;
   }
 
-  GLFWwindow *window = glfwCreateWindow(800, 600, "Physics Engine", NULL, NULL);
+  GLFWmonitor *primaryMonitor = glfwGetPrimaryMonitor();
+  const GLFWvidmode *mode = glfwGetVideoMode(primaryMonitor);
+
+  GLFWwindow *window = glfwCreateWindow(mode->width, mode->height,
+                                        "Physics Engine", primaryMonitor, NULL);
   if (!window) {
     std::cerr << "Failed to create GLFW window" << std::endl;
     glfwTerminate();
