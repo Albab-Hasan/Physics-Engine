@@ -15,25 +15,25 @@ You'll need CMake and a C++ compiler to build this. I'm using GLFW for window ma
 
 ## Current Status
 
-I've built a working particle physics system with 3D visualization and navigation. The engine supports multiple particles, various forces (gravity, springs, drag), collision resolution, and allows the user to fly around the scene.
+I've built a working particle physics system with 3D visualization and navigation. The engine supports multiple particles, various forces (gravity, springs, drag, buoyancy), collision resolution, and allows the user to fly around the scene.
 
 ### What's Working
 - Vector3 math class for 3D calculations
 - Particle class with Euler integration
 - Force accumulator system
 - Force generator interface
-- Gravity, Spring, and Drag force generators
+- Gravity, Spring, Drag, and Buoyancy force generators
 - Particle contact resolution system
 - Multiple particles with random initial conditions
 - Collision detection (particle-particle and particle-ground)
 - 3D Sphere rendering with lighting
 - First-person fly camera (WASD + Mouse)
 - Full screen mode
+- Water plane visualization
 
 ### Recent Progress
-Implemented a drag force generator to simulate air resistance. This adds realism by slowing down particles over time, preventing them from accelerating indefinitely.
+Implemented a buoyancy force generator and a water plane. Particles now float in the water, demonstrating the interaction between gravity and buoyancy.
 
 ### Next Steps
-- Implement more complex force generators (e.g., buoyancy)
 - Add user interaction (mouse picking)
 - Optimize collision detection (spatial partitioning)
