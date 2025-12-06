@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8025910A-6C00-3B1A-BA8F-59A883905F28}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\albab\Documents\Projects\physics\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/albab/Documents/Projects/physics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/albab/Documents/Projects/physics -BC:/Users/albab/Documents/Projects/physics/build2 --check-stamp-file C:/Users/albab/Documents/Projects/physics/build2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Users\albab\Documents\Projects\physics\build2\CMakeFiles\3.31.8\CMakeCCompiler.cmake;C:\Users\albab\Documents\Projects\physics\build2\CMakeFiles\3.31.8\CMakeCXXCompiler.cmake;C:\Users\albab\Documents\Projects\physics\build2\CMakeFiles\3.31.8\CMakeRCCompiler.cmake;C:\Users\albab\Documents\Projects\physics\build2\CMakeFiles\3.31.8\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\albab\Documents\Projects\physics\build2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/albab/Documents/Projects/physics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/albab/Documents/Projects/physics -BC:/Users/albab/Documents/Projects/physics/build2 --check-stamp-file C:/Users/albab/Documents/Projects/physics/build2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Users\albab\Documents\Projects\physics\build2\CMakeFiles\3.31.8\CMakeCCompiler.cmake;C:\Users\albab\Documents\Projects\physics\build2\CMakeFiles\3.31.8\CMakeCXXCompiler.cmake;C:\Users\albab\Documents\Projects\physics\build2\CMakeFiles\3.31.8\CMakeRCCompiler.cmake;C:\Users\albab\Documents\Projects\physics\build2\CMakeFiles\3.31.8\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\albab\Documents\Projects\physics\build2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/albab/Documents/Projects/physics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/albab/Documents/Projects/physics -BC:/Users/albab/Documents/Projects/physics/build2 --check-stamp-file C:/Users/albab/Documents/Projects/physics/build2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Users\albab\Documents\Projects\physics\build2\CMakeFiles\3.31.8\CMakeCCompiler.cmake;C:\Users\albab\Documents\Projects\physics\build2\CMakeFiles\3.31.8\CMakeCXXCompiler.cmake;C:\Users\albab\Documents\Projects\physics\build2\CMakeFiles\3.31.8\CMakeRCCompiler.cmake;C:\Users\albab\Documents\Projects\physics\build2\CMakeFiles\3.31.8\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\albab\Documents\Projects\physics\build2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/albab/Documents/Projects/physics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/albab/Documents/Projects/physics -BC:/Users/albab/Documents/Projects/physics/build2 --check-stamp-file C:/Users/albab/Documents/Projects/physics/build2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Users\albab\Documents\Projects\physics\build2\CMakeFiles\3.31.8\CMakeCCompiler.cmake;C:\Users\albab\Documents\Projects\physics\build2\CMakeFiles\3.31.8\CMakeCXXCompiler.cmake;C:\Users\albab\Documents\Projects\physics\build2\CMakeFiles\3.31.8\CMakeRCCompiler.cmake;C:\Users\albab\Documents\Projects\physics\build2\CMakeFiles\3.31.8\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\albab\Documents\Projects\physics\build2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\ZERO_CHECK.vcxproj">
+      <Project>{F83E1DC6-D257-3A31-B22A-9F4148FECDD1}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\PhysicsEngine.vcxproj">
+      <Project>{B70B7CDA-C9A2-3BF3-BA5D-60813CA2B2E2}</Project>
+      <Name>PhysicsEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\examples\boing.vcxproj">
+      <Project>{968AE93B-9FE2-31C8-90E3-A8C1E6533772}</Project>
+      <Name>boing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\tests\clipboard.vcxproj">
+      <Project>{C19B3FD3-AD96-3199-88FF-65FC1C0CC10C}</Project>
+      <Name>clipboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\tests\cursor.vcxproj">
+      <Project>{9D155F96-3D5D-32AF-83BD-16737D5180C1}</Project>
+      <Name>cursor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\tests\empty.vcxproj">
+      <Project>{5045FEFB-CA84-38C8-ACCF-4214A85281B1}</Project>
+      <Name>empty</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\tests\events.vcxproj">
+      <Project>{B0C3E841-464D-33FF-A8C2-6009EB8B6CD0}</Project>
+      <Name>events</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\tests\gamma.vcxproj">
+      <Project>{3BD8E5D6-B2B4-36C7-9A3B-D1B6915FFD29}</Project>
+      <Name>gamma</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\examples\gears.vcxproj">
+      <Project>{5F8B6A29-37A9-36E2-AC7A-EF575004D41C}</Project>
+      <Name>gears</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\src\glfw.vcxproj">
+      <Project>{2FCB66A4-7D19-39DC-9493-12D33F9E723E}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\tests\glfwinfo.vcxproj">
+      <Project>{D94AA33B-CE96-3773-B49E-D3B976559DF9}</Project>
+      <Name>glfwinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\examples\heightmap.vcxproj">
+      <Project>{4E063942-EC9D-3B44-BD78-561799DB9380}</Project>
+      <Name>heightmap</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\tests\icon.vcxproj">
+      <Project>{70CDF3C8-BE0D-363C-BCAF-3A2B28E9F511}</Project>
+      <Name>icon</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\tests\iconify.vcxproj">
+      <Project>{F937D083-90A7-3A7D-A6D6-9EE3EF70D8A1}</Project>
+      <Name>iconify</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\tests\inputlag.vcxproj">
+      <Project>{D968872A-C4B1-3AE9-AAFA-4DC99E941012}</Project>
+      <Name>inputlag</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\tests\joysticks.vcxproj">
+      <Project>{60E8B10F-A1BA-3914-BEDF-6AF09C0ED58F}</Project>
+      <Name>joysticks</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\tests\monitors.vcxproj">
+      <Project>{D4B6ADBA-B94F-3BEF-B186-ED821FA4B19E}</Project>
+      <Name>monitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\tests\msaa.vcxproj">
+      <Project>{DF0A22B7-4A23-3D62-A36B-188484333856}</Project>
+      <Name>msaa</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\examples\offscreen.vcxproj">
+      <Project>{A8503CA4-8EAE-36E4-982D-D49B6DDFDD0F}</Project>
+      <Name>offscreen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\tests\opacity.vcxproj">
+      <Project>{F9E6F4F3-0E9D-3FBA-AF79-5400BED5DD43}</Project>
+      <Name>opacity</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\examples\particles.vcxproj">
+      <Project>{49B6F8EB-22A2-3A6B-BF83-B3BCCCA15E3B}</Project>
+      <Name>particles</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\tests\reopen.vcxproj">
+      <Project>{8F1D696B-42A4-3B85-9AAB-8539EE4D9A50}</Project>
+      <Name>reopen</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\examples\sharing.vcxproj">
+      <Project>{F219FEFF-6675-3BF2-A1AC-2611D65756C0}</Project>
+      <Name>sharing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\examples\simple.vcxproj">
+      <Project>{FB9A2457-6936-393D-AB88-9A605ABBED67}</Project>
+      <Name>simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\examples\splitview.vcxproj">
+      <Project>{4D016B72-8F03-3E89-9222-9191388A58AA}</Project>
+      <Name>splitview</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\tests\tearing.vcxproj">
+      <Project>{33A4D288-B632-3B09-BA69-920933F0F296}</Project>
+      <Name>tearing</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\tests\threads.vcxproj">
+      <Project>{724B5671-0BCB-3383-9DB2-1ACB0E68EAFB}</Project>
+      <Name>threads</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\tests\timeout.vcxproj">
+      <Project>{DF23C3BB-23D8-3CF1-B0F5-06B17C6E993E}</Project>
+      <Name>timeout</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\tests\title.vcxproj">
+      <Project>{550A4CAD-8C65-31B7-AC3A-8E48486FEF7D}</Project>
+      <Name>title</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\tests\triangle-vulkan.vcxproj">
+      <Project>{0CEEE6EF-F33C-3828-9764-F0A0C57997BE}</Project>
+      <Name>triangle-vulkan</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\examples\wave.vcxproj">
+      <Project>{86AB656E-7D76-350F-A215-714FA7E76E8C}</Project>
+      <Name>wave</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\albab\Documents\Projects\physics\build2\_deps\glfw-build\tests\windows.vcxproj">
+      <Project>{DF20E32A-09CC-3C77-B420-FB5161ADDB36}</Project>
+      <Name>windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

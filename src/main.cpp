@@ -1,6 +1,7 @@
 #include "physics/Camera.h"
 #include "physics/GravityGenerator.h"
 #include "physics/Particle.h"
+#include "physics/ParticleBuoyancy.h"
 #include "physics/ParticleContact.h"
 #include "physics/ParticleContactResolver.h"
 #include "physics/ParticleDrag.h"
@@ -162,6 +163,9 @@ int main() {
 
   GravityGenerator gravity(Vector3(0.0f, -9.8f, 0.0f));
   ParticleDrag drag(0.1f, 0.01f);
+  float waterHeight = 0.0f;
+  ParticleBuoyancy buoyancy(0.05f, 0.001f,
+                            waterHeight); // maxDepth, volume, waterHeight
   ParticleContactResolver resolver(particleCount * 2);
 
   // Collision data
@@ -182,6 +186,7 @@ int main() {
       particle.clearAccumulator();
       gravity.updateForce(&particle, deltaTime);
       drag.updateForce(&particle, deltaTime);
+      buoyancy.updateForce(&particle, deltaTime);
     }
 
     // 2. Integrate
@@ -233,6 +238,18 @@ int main() {
 
     glLoadIdentity();
     camera.apply();
+
+    // Draw Water Plane
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    glBegin(GL_QUADS);
+    glColor4f(0.0f, 0.0f, 1.0f, 0.5f); // Semi-transparent blue
+    glVertex3f(-20.0f, waterHeight, -20.0f);
+    glVertex3f(-20.0f, waterHeight, 20.0f);
+    glVertex3f(20.0f, waterHeight, 20.0f);
+    glVertex3f(20.0f, waterHeight, -20.0f);
+    glEnd();
+    glDisable(GL_BLEND);
 
     for (const auto &particle : particles) {
       glPushMatrix();

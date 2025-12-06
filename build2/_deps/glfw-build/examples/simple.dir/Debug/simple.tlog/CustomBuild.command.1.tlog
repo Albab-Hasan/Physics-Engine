@@ -1,0 +1,10 @@
+^C:\USERS\ALBAB\DOCUMENTS\PROJECTS\PHYSICS\BUILD2\_DEPS\GLFW-SRC\EXAMPLES\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/albab/Documents/Projects/physics -BC:/Users/albab/Documents/Projects/physics/build2 --check-stamp-file C:/Users/albab/Documents/Projects/physics/build2/_deps/glfw-build/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

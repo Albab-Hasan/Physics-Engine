@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/albab/Documents/Projects/physics/build2/_deps/glfw-subbuild/CMakeFiles/glfw-populate"
+		},
+		{
+			"file" : "C:/Users/albab/Documents/Projects/physics/build2/_deps/glfw-subbuild/CMakeFiles/d6e1a3fde604d0aa36949bb6cbc22e5a/glfw-populate.rule"
+		},
+		{
+			"file" : "C:/Users/albab/Documents/Projects/physics/build2/_deps/glfw-subbuild/CMakeFiles/7614f3689fa37fdece0bfa73c1bc8e4c/glfw-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/albab/Documents/Projects/physics/build2/_deps/glfw-subbuild/CMakeFiles/aaba8d26acb74bc2c2c1d758bb5f57cc/glfw-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/albab/Documents/Projects/physics/build2/_deps/glfw-subbuild/CMakeFiles/aaba8d26acb74bc2c2c1d758bb5f57cc/glfw-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/albab/Documents/Projects/physics/build2/_deps/glfw-subbuild/CMakeFiles/aaba8d26acb74bc2c2c1d758bb5f57cc/glfw-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/albab/Documents/Projects/physics/build2/_deps/glfw-subbuild/CMakeFiles/aaba8d26acb74bc2c2c1d758bb5f57cc/glfw-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/albab/Documents/Projects/physics/build2/_deps/glfw-subbuild/CMakeFiles/aaba8d26acb74bc2c2c1d758bb5f57cc/glfw-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/albab/Documents/Projects/physics/build2/_deps/glfw-subbuild/CMakeFiles/aaba8d26acb74bc2c2c1d758bb5f57cc/glfw-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/albab/Documents/Projects/physics/build2/_deps/glfw-subbuild/CMakeFiles/aaba8d26acb74bc2c2c1d758bb5f57cc/glfw-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/albab/Documents/Projects/physics/build2/_deps/glfw-subbuild/CMakeFiles/aaba8d26acb74bc2c2c1d758bb5f57cc/glfw-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glfw-populate"
+		],
+		"name" : "glfw-populate"
+	}
+}

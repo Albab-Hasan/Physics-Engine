@@ -24,6 +24,7 @@ add_executable(PhysicsEngine
     src/physics/ParticleContactResolver.cpp
     src/physics/Camera.cpp
     src/physics/ParticleDrag.cpp
+    src/physics/ParticleBuoyancy.cpp
 )
 
 target_link_libraries(PhysicsEngine PRIVATE glfw OpenGL::GL)

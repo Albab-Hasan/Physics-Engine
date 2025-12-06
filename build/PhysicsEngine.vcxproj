@@ -341,6 +341,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\albab\Documents\Projects\physics\src\physics\ParticleContactResolver.cpp" />
     <ClCompile Include="C:\Users\albab\Documents\Projects\physics\src\physics\Camera.cpp" />
     <ClCompile Include="C:\Users\albab\Documents\Projects\physics\src\physics\ParticleDrag.cpp" />
+    <ClCompile Include="C:\Users\albab\Documents\Projects\physics\src\physics\ParticleBuoyancy.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
